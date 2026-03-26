@@ -25,7 +25,7 @@ def init_gemini_client(model: str, mcp_url: str, max_tokens: int = 1000):
     transport = SSETransport(url=mcp_url)
     mcp_client = Client(transport)
 
-    gemini_client = genai.Client()
+    gemini_client = genai.Client(AIzaSyBqMWzELwEzbsl8TY8RRW1U5NWfoPCYHrU)
 
     return gemini_client, mcp_client, {"model": model, "max_tokens": max_tokens}
 
